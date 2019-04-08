@@ -40,13 +40,13 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest((request, resp
   // // uncomment `intentMap.set('your intent name here', yourFunctionHandler);`
   // // below to get this function to be run when a Dialogflow intent is matched
  function majorTom(agent) {
-  agent.add(`Major Tom is a fictional astronaut referenced in David Bowie's songs "Space Oddity", "Ashes to Ashes", "Hallo Spaceboy", "New Killer Star" and "Blackstar". Bowie's own interpretation of the character evolved throughout his career`);
+  agent.add(`You want to know about Major Tom?`);
    agent.add(new Card({
       title: `About Major Tom`,
       imageUrl: 'https://cdn10.bigcommerce.com/s-kfeqy/products/3418/images/12743/BLA1266-Space-Odity__03290.1468014622.1280.1280.jpg',
-      text: `This is the body text of a card.  You can even use line\n  breaks and emoji! 💁`,
-       buttonText: 'This is a button',
-      buttonUrl: 'https://docs.dialogflow.com/'
+      text: `Major Tom is a fictional astronaut referenced in David Bowie's songs "Space Oddity", "Ashes to Ashes", "Hallo Spaceboy", "New Killer Star" and "Blackstar". Bowie's own interpretation of the character evolved throughout his career 👨‍🚀`,
+       buttonText: 'Blast off!',
+      buttonUrl: 'https://www.youtube.com/watch?v=iYYRH4apXDo'
     })
   );
    agent.add(new Suggestion(`Quick Reply`));
